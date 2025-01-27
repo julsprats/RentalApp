@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Weather Report Heading -->
+    <TextView
+        android:id="@+id/textViewWeatherHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Weather Report"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editText"/>
+
+    <!-- Text Box -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter location"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherHeading"
+        app:layout_constraintWidth_default="wrap"/>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/buttonGetWeather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Get Weather"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"/>
+
+    <!-- Labels for Weather Information -->
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Temperature: "
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGetWeather"/>
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Humidity: "
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperature"/>
+
+    <TextView
+        android:id="@+id/textViewWeatherConditions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Weather Conditions: "
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumidity"/>
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherConditions"/>
+
+    <!-- Another Button -->
+    <Button
+        android:id="@+id/buttonAnotherAction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Another Action"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
